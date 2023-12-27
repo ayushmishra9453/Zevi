@@ -1,0 +1,163 @@
+$primary-color: #000;
+$font-family: Inter;
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin absolute-top-right($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+  }
+.main{
+    @include flex-center();
+}
+.home{
+    background-image: url("../images/home.jpg");
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+   margin: auto;
+    
+}
+
+.logo{
+    @include absolute-top-right(40px, 40px);
+    width: 86px;
+height: 44.691px;
+flex-shrink: 0;
+
+}
+.search{
+    @include flex-center();
+    margin-top: 162px;
+    background: white;
+    width: 915px;
+    height: 32px;
+    border-radius: 20px;
+    display: inline-flex;
+padding: 21px 42px 20px 40px;
+
+}
+.inp{
+   
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.input{
+    color: rgba($primary-color, 0.4);
+    font-family: $font-family;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    width: 794px;
+    height: 42px;
+    padding: 0px;
+   
+&:focus{
+    outline: none;
+    // border: none;
+
+}
+}
+.wrapper2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.onSearch{
+    width: 945px;
+height: 530px;
+
+// position: absolute;
+margin-top: 12px;
+// margin-left: 244px;
+border-radius: 4px;
+background: #FFF;
+box-shadow: 0px 4px 40px 0px rgba($primary-color, 0.25);
+padding: 40px;
+}
+.heading{
+    color: $primary-color;
+    font-family: $font-family;
+font-size: 21.972px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 0px 0px;
+width: 145px;
+height: 27px;
+margin: 0px;
+
+margin-bottom: 24px;
+}
+.allCart{
+    display: flex;
+    justify-content: space-between;
+}
+.cart1{
+    width: 165px;
+    height: 234px; 
+}
+.img{
+    width: 165px;
+    height: 223px;
+    // flex-shrink: 0;
+    border-radius: 4px;
+
+}
+.desc{
+    color: $primary-color;
+    font-family: $font-family;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+width: 165px;
+height: 25px;
+margin: 3px 0px;
+}
+.details{
+    position: absolute;
+    top: 385px;
+}
+.heading2{
+    color: $primary-color;
+    font-family: $font-family;
+font-size: 21.972px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0px;
+margin-top: 40px;
+margin-bottom: 12px;
+
+
+}
+para1{
+    color: $primary-color;
+    font-family: $font-family;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 12px 0px;
+overflow: hidden;
+list-style: none;
+}
+
+
